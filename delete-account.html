@@ -3,26 +3,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rewyn — Delete Your Account &amp; Data</title>
+<title>Rewyn: Delete Your Account &amp; Data</title>
 <style>
+  :root{--ink:#1a1a24;--muted:#6b7280;--accent:#6366f1;--line:#ececf1;--bg:#f6f6f9}
+  *{box-sizing:border-box}
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    max-width:760px;margin:0 auto;padding:32px 20px 80px;color:#1a1a24;line-height:1.6}
-  h1{font-size:28px;margin-bottom:4px}
-  h2{font-size:19px;margin-top:32px}
-  .meta{color:#666;font-size:14px;margin-bottom:24px}
-  ol,ul{padding-left:22px}
-  a{color:#4f46e5}
-  .box{background:#f2f2f5;border-radius:10px;padding:16px 20px;margin-top:16px}
+    margin:0;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+  .topbar{background:#0f0f14;padding:20px 24px}
+  .topbar .wrap{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:10px}
+  .dot{width:22px;height:22px;border-radius:7px;background:var(--accent);display:inline-block;flex:none}
+  .brand{color:#fff;font-size:18px;font-weight:700;letter-spacing:-.2px}
+  .brand span{color:#a5b4fc;font-weight:500}
+  .card{max-width:760px;margin:24px auto 64px;background:#fff;border:1px solid var(--line);
+    border-radius:16px;padding:40px 36px}
+  h1{font-size:28px;margin:0 0 4px;letter-spacing:-.4px}
+  h2{font-size:18px;margin-top:34px;color:var(--accent)}
+  .meta{color:var(--muted);font-size:14px;margin:0 0 28px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+  p{margin:12px 0}
+  ol,ul{padding-left:20px}
+  li{margin:6px 0}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .box{background:#f1f1f8;border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-top:16px}
+  @media(max-width:600px){.card{margin:16px;padding:28px 22px}}
 </style>
 </head>
 <body>
+<div class="topbar"><div class="wrap"><span class="dot"></span><span class="brand">Rewyn <span>by Simple Craft</span></span></div></div>
+<div class="card">
 <h1>Delete your Rewyn account and data</h1>
-<p class="meta">Rewyn (by Simple Craft) &middot; Last updated: 19 June 2026</p>
+<p class="meta">Last updated: 19 June 2026</p>
 
 <p>You can permanently delete your Rewyn account and all of your data at any time. There are two
 ways to do this.</p>
 
-<h2>Option 1 — In the app (instant)</h2>
+<h2>Option 1: In the app (instant)</h2>
 <ol>
   <li>Open Rewyn and sign in.</li>
   <li>Go to <strong>Settings</strong>.</li>
@@ -30,7 +45,7 @@ ways to do this.</p>
 </ol>
 <p>This permanently and immediately removes your account and all associated data.</p>
 
-<h2>Option 2 — By email (if you no longer have the app)</h2>
+<h2>Option 2: By email (if you no longer have the app)</h2>
 <div class="box">
   <p>Email <strong><a href="mailto:rj1205dev@gmail.com">rj1205dev@gmail.com</a></strong> from the
   email address associated with your Rewyn account, with the subject line
@@ -54,6 +69,6 @@ are managed by Google under its own policies.</p>
 <h2>Contact</h2>
 <p>Questions about deleting your data? Email
 <a href="mailto:rj1205dev@gmail.com">rj1205dev@gmail.com</a>.</p>
-
+</div>
 </body>
 </html>

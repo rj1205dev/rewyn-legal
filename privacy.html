@@ -3,21 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rewyn — Privacy Policy</title>
+<title>Rewyn Privacy Policy</title>
 <style>
+  :root{--ink:#1a1a24;--muted:#6b7280;--accent:#6366f1;--line:#ececf1;--bg:#f6f6f9}
+  *{box-sizing:border-box}
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    max-width:760px;margin:0 auto;padding:32px 20px 80px;color:#1a1a24;line-height:1.6}
-  h1{font-size:28px;margin-bottom:4px}
-  h2{font-size:19px;margin-top:32px}
-  .meta{color:#666;font-size:14px;margin-bottom:24px}
-  ul{padding-left:22px}
-  a{color:#4f46e5}
-  code{background:#f2f2f5;padding:1px 5px;border-radius:4px}
+    margin:0;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+  .topbar{background:#0f0f14;padding:20px 24px}
+  .topbar .wrap{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:10px}
+  .dot{width:22px;height:22px;border-radius:7px;background:var(--accent);display:inline-block;flex:none}
+  .brand{color:#fff;font-size:18px;font-weight:700;letter-spacing:-.2px}
+  .brand span{color:#a5b4fc;font-weight:500}
+  .card{max-width:760px;margin:24px auto 64px;background:#fff;border:1px solid var(--line);
+    border-radius:16px;padding:40px 36px}
+  h1{font-size:28px;margin:0 0 4px;letter-spacing:-.4px}
+  h2{font-size:18px;margin-top:34px;color:var(--accent)}
+  .meta{color:var(--muted);font-size:14px;margin:0 0 28px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+  p{margin:12px 0}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  code{background:#f2f2f5;padding:1px 6px;border-radius:5px;font-size:.9em}
+  @media(max-width:600px){.card{margin:16px;padding:28px 22px}}
 </style>
 </head>
 <body>
+<div class="topbar"><div class="wrap"><span class="dot"></span><span class="brand">Rewyn <span>by Simple Craft</span></span></div></div>
+<div class="card">
 <h1>Privacy Policy</h1>
-<p class="meta">Rewyn &middot; Last updated: 19 June 2026</p>
+<p class="meta">Last updated: 19 June 2026</p>
 
 <p>This Privacy Policy explains how the Rewyn mobile application ("Rewyn", "we", "us", or "our")
 collects, uses, stores, and protects your information. Rewyn is a budgeting app operated by
@@ -29,8 +44,8 @@ Policy.</p>
 and we do <strong>not</strong> use advertising or third-party tracking/analytics SDKs.</p>
 <ul>
   <li><strong>Account information:</strong> your email address and a password (the password is
-  stored only as a secure hash by our authentication provider — we never see it in plain text).</li>
-  <li><strong>Financial information you enter:</strong> the figures you type into the app — your
+  stored only as a secure hash by our authentication provider, so we never see it in plain text).</li>
+  <li><strong>Financial information you enter:</strong> the figures you type into the app. This includes your
   income, pay-cycle settings, expenses (amount, category, optional note, date), bills/recurring
   costs, and savings goals. This data is entered manually by you; we never access your bank
   accounts or transactions.</li>
@@ -55,11 +70,11 @@ and we do <strong>not</strong> use advertising or third-party tracking/analytics
 <h2>3. Service providers</h2>
 <p>We share data only with the processors that make the app function:</p>
 <ul>
-  <li><strong>Supabase</strong> — database, authentication, and secure storage of your account and
+  <li><strong>Supabase</strong>: database, authentication, and secure storage of your account and
   financial data.</li>
-  <li><strong>RevenueCat</strong> — subscription management.</li>
-  <li><strong>Google Play Billing</strong> — payment processing for subscriptions.</li>
-  <li><strong>Resend</strong> — delivery of transactional emails (e.g. password reset).</li>
+  <li><strong>RevenueCat</strong>: subscription management.</li>
+  <li><strong>Google Play Billing</strong>: payment processing for subscriptions.</li>
+  <li><strong>Resend</strong>: delivery of transactional emails (e.g. password reset).</li>
 </ul>
 <p>These providers process your data on our behalf and are bound to protect it.</p>
 
@@ -89,6 +104,6 @@ version. Material changes will be communicated within the app where appropriate.
 <h2>9. Contact us</h2>
 <p>For any privacy questions or data requests, contact us at:
 <strong><a href="mailto:rj1205dev@gmail.com">rj1205dev@gmail.com</a></strong>.</p>
-
+</div>
 </body>
 </html>
